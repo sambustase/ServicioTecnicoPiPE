@@ -1,0 +1,281 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #b1b2b9; /* Color de fondo general */
+}
+
+.navbar {
+    background-color: #839ba3; /* Color de fondo de la barra de navegación */
+    color: white;
+    padding: 10px 0;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.nav-links {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.nav-links li {
+    margin-left: 20px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: #47b8ff;
+}
+
+.hero {
+    background-image: url('../img/WhatsApp\ Image\ 2024-10-14\ at\ 11.29.32\ PM.jpeg'); /* Cambia esto por la URL de tu imagen */
+    background-size: cover; /* Asegúrate de que la imagen cubra toda la sección */
+    background-position: center; /* Centra la imagen */
+    height: 100vh; /* Altura de la ventana */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+    position: relative;
+}
+
+.hero-content {
+    background-color: rgba(0, 0, 0, 0.5); /* Fondo semi-transparente */
+    padding: 20px;
+    border-radius: 10px;
+}
+
+h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+p {
+    font-size: 20px;
+}
+
+.services {
+    background-color: #b7dccf; /* Color de fondo de la sección de servicios */
+    padding: 50px 0;
+    text-align: center;
+}
+
+.services h2 {
+    font-size: 36px;
+    margin-bottom: 30px;
+}
+
+.service-cards {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.card {
+    background-color: #fffff0; /* Color de fondo de las tarjetas de servicios */
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 20px;
+    margin: 10px;
+    width: 250px; /* Ancho de cada tarjeta */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.card h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.card p {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.card button {
+    background-color: #333;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.card button:hover {
+    background-color: #ff6347;
+}
+
+.contact {
+    background-color: #b7dccf; /* Color de fondo del formulario de contacto */
+    padding: 50px 0;
+    text-align: center;
+}
+
+.contact h2 {
+    font-size: 36px;
+    margin-bottom: 30px;
+}
+
+form {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group {
+    margin-bottom: 20px;
+    text-align: left; /* Alinea el texto a la izquierda */
+}
+
+label {
+    font-size: 18px;
+    margin-bottom: 5px;
+    display: block;
+}
+
+input, select, textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+textarea {
+    resize: vertical; /* Permite redimensionar el campo de texto verticalmente */
+}
+
+button {
+    background-color: #333;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    font-size: 18px;
+}
+
+button:hover {
+    background-color: #1a80a8;
+}
+
+.whatsapp-float {
+    position: fixed;
+    bottom: 20px; /* Distancia desde la parte inferior de la pantalla */
+    right: 20px; /* Distancia desde el lado derecho de la pantalla */
+    background-color: #25D366; /* Color de fondo de WhatsApp */
+    border-radius: 50%; /* Hace que el botón sea circular */
+    padding: 15px; /* Espaciado interno */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2); /* Sombra */
+    transition: background-color 0.3s; /* Transición para el efecto hover */
+    z-index: 1000; /* Asegura que el botón esté por encima de otros elementos */
+}
+
+.whatsapp-float img {
+    width: 30px; /* Ancho del ícono */
+    height: auto; /* Altura automática para mantener la proporción */
+}
+
+.whatsapp-float:hover {
+    background-color: #128C7E; /* Color más oscuro al pasar el mouse */
+}
+
+/* Media Queries */
+@media (max-width: 1200px) {
+    .container {
+        width: 90%;
+    }
+
+    .hero h1 {
+        font-size: 36px;
+    }
+
+    .hero p {
+        font-size: 18px;
+    }
+
+    .service-cards {
+        justify-content: center; /* Centra las tarjetas en pantallas más pequeñas */
+    }
+}
+
+@media (max-width: 768px) {
+    .nav-links {
+        flex-direction: column; /* Cambia la dirección de la lista de navegación a vertical */
+        align-items: center; /* Centra los elementos */
+        display: none; /* Oculta el menú inicialmente */
+    }
+
+    .navbar {
+        position: relative; /* Necesario para el botón de menú */
+    }
+
+    .navbar.active .nav-links {
+        display: flex; /* Muestra el menú cuando se activa */
+    }
+
+    .navbar .menu-icon {
+        display: block; /* Muestra el icono del menú */
+        cursor: pointer; /* Cambia el cursor al pasar sobre el icono */
+    }
+
+    .hero h1 {
+        font-size: 28px;
+    }
+
+    .hero p {
+        font-size: 16px;
+    }
+
+    .service-cards {
+        flex-direction: column; /* Coloca las tarjetas en una sola columna */
+    }
+
+    .card {
+        width: 90%; /* Aumenta el ancho de las tarjetas */
+        margin: 10px 0; /* Margen vertical para tarjetas */
+    }
+}
+
+@media (max-width: 480px) {
+    .hero h1 {
+        font-size: 24px;
+    }
+
+    .hero p {
+        font-size: 14px;
+    }
+
+    button {
+        padding: 8px 12px;
+        font-size: 16px;
+    }
+}

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <title>Servicio Técnico</title>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo">Servicio Técnico</div>
+            <ul class="nav-links">
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#servicios">Servicios</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <header class="hero">
+        <div class="hero-content">
+            <h1>Servicio Técnico de Computadoras</h1>
+            <p>Soluciones rápidas y efectivas para todos tus problemas tecnológicos. ¡Contáctanos y recupera el rendimiento de tu equipo!</p>
+        </div>
+    </header>
+
+    <section class="services" id="servicios">
+        <h2>Nuestros Servicios</h2>
+        <div class="service-cards">
+            <div class="card">
+                <h3>Formateo Notebook/PC</h3>
+                <p>Realizamos formateos en Windows, Linux y Mac, asegurando que tu equipo funcione como nuevo.</p>
+            </div>
+            <div class="card">
+                <h3>Respaldo de Información</h3>
+                <p>Te ayudamos a proteger tus datos con respaldos seguros y eficientes. No pierdas tu información importante.</p>
+            </div>
+            <div class="card">
+                <h3>Cambio de Hardware</h3>
+                <p>Mejora el rendimiento de tu equipo con nuestros servicios de cambio de hardware. ¡Optimiza tu PC hoy!</p>
+            </div>
+            <div class="card">
+                <h3>Instalación de Programas</h3>
+                <p>Instalamos todo tipo de software de ofimática, incluyendo Office, PDF y otros programas que necesites.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact" id="contacto">
+        <h2>Contáctanos</h2>
+        <form action="#" method="POST">
+            <div class="form-group">
+                <label for="nombre">Nombre y Apellido:</label>
+                <input type="text" id="nombre" name="nombre" required>
+            </div>
+            <div class="form-group">
+                <label for="telefono">Teléfono:</label>
+                <input type="tel" id="telefono" name="telefono" required>
+            </div>
+            <div class="form-group">
+                <label for="correo">Correo Electrónico:</label>
+                <input type="email" id="correo" name="correo" required>
+            </div>
+            <div class="form-group">
+                <label for="servicio">Tipo de Servicio:</label>
+                <select id="servicio" name="servicio" required>
+                    <option value="">Seleccione un servicio</option>
+                    <option value="formateo">Formateo Notebook/PC</option>
+                    <option value="respaldo">Respaldo de Información</option>
+                    <option value="hardware">Cambio de Hardware</option>
+                    <option value="instalacion">Instalación de Programas</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="mensaje">Mensaje:</label>
+                <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
+            </div>
+            <button type="submit">Enviar</button>
+        </form>
+    </section>
+
+    <a href="https://wa.me/56973935268" target="_blank" class="whatsapp-float">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp" />
+    </a>
+    
+</body>
+</html>
